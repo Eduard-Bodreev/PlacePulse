@@ -1,0 +1,45 @@
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .popupText {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .popupActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-bgc);
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: var(--btn-bgc);
+  }
+  

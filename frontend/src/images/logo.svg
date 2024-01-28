@@ -1,0 +1,17 @@
+<svg width="350" height="136" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="138" width="330" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_13" d="m177.5,77.5" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path id="svg_14" d="m110.5,61.5" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text stroke="#000" transform="matrix(1.0077630530936403,0,0,1.1874243479380056,8.014400987675117,-5.6952793862980275) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="60" id="svg_15" y="76.956696" x="14.763042" stroke-width="0" fill="#000000">PlacePulse</text>
+ </g>
+</svg>

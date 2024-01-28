@@ -1,0 +1,302 @@
+.userProfile {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+  }
+  
+  .avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .userInfo {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    outline: none;
+    border-radius: var(--input-border-radius);
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    border: 1px solid var(--logout-btn-border);
+    margin-bottom: 15px;
+    height: 36px;
+    background-color: var(--logout-btn-bgc);
+    resize: none;
+  }
+  
+  .input:focus {
+    border: 1px solid var(--color-input-focus);
+  }
+  
+  .input:invalid {
+    border: 1px solid var(--color-input-invalid);
+  }
+  
+  input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--text-input-color);
+  }
+  
+  .eye_btn {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .error {
+    text-align: left;
+    opacity: .7;
+  }
+
+  .textarea {
+    resize: none;
+    padding-top: 8px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--text-color);
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+  color: var(--text-input-color);
+}
+
+.nonSelectableInput {
+    background-color: var(--input-bg-disabled);
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+  }
+
+:root {
+    --text-input-color: #757575;
+    --input-bg-disabled: #f0f0f0;
+    --common-transition: all 0.3s ease;
+  --button-border-radius: 4px;
+  --text-white-color: #ffffff;
+  --input-bg-disabled: #f0f0f0;
+  }
+
+  .label {
+    text-align: left !important;
+    margin-bottom: 2px;
+    display: inline-block;
+  }
+  
+
+  .buttonChange {
+    border: none;
+    outline: none;
+    transition: var(--common-transition);
+    background-color: var(--btn-bgc);
+    color: var(--text-white-color);
+    padding: 10px;
+    border-radius: var(--button-border-radius);
+    text-align: center;
+    align-items: center;
+    max-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .buttonChange.disabled {
+    cursor: default;
+    opacity: 0.4;
+  }
+  
+  .buttonChange:hover:not(.disabled) {
+    opacity: 0.8;
+  }
+
+  .sectionContainer > div {
+    height: 300px;
+    overflow-y: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .friendsList, .publicUsers, .incomingRequests {
+    flex: 1;
+  }
+  
+  .sectionContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .sectionContainer > div::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .sectionContainer > div::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+  }
+
+  .sectionContainer > div {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+  }
+  
+  .noContentMessage {
+    color: #757575;
+    font-style: italic;
+  }
+
+  .publicUserAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .userDisplay {
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .addFriendIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--btn-bgc);
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    margin-bottom: 2px;
+    justify-content: space-around;
+  }
+  
+  .addFriendIcon::before {
+    line-height: 0;
+  }
+  
+  .userName {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .publicUserItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .pending {
+    background-color: #cccccc;
+  }
+  
+
+  .incomingRequestItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #ececec;
+}
+
+.actionButtons {
+    margin-left: auto;
+}
+
+.acceptButton {
+    cursor: pointer;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--btn-bgc);
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    margin-bottom: 2px;
+    justify-content: center
+}
+
+.btnsPending{
+    text-align: center
+}
+
+.declineButton{
+    cursor: pointer;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--btn-bgc);
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    margin-bottom: 2px;
+    justify-content: center;
+    background-color: #cccccc;
+
+}

@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px;
+  box-shadow: inset 0px -1px 0px var(--header-shadow);
+  margin: 0 auto;
+}
+
+
+.logo {
+  width: 100px;
+  height: 32px;
+}
+
+.btns_mid {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btns_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hidden {
+  display: none;
+}
